@@ -1,0 +1,28 @@
+<div style="display: grid; margin-top: 2rem; margin-left: 2rem"></div>
+    <div style="display: grid; border: 1px solid black; margin: .75rem; padding: 1.25rem; background: whitesmoke; row-gap: .5rem;">
+        <span>
+            <b>ID:</b> <%= product['id'] %>
+        </span>
+        <span>
+            <b>Name:</b> <%= product['name'] %>
+        </span>
+        <span>
+            <b>Price:</b> <%= product['price'] %>
+        </span>
+        <span>
+            <b>Description:</b> <%= product['description'] %>
+        </span>
+        <span>
+            <b>Product:</b> <%= product['product'] %>
+        </span>
+        <span>
+            <b>Color:</b> <%= product['color'] %>
+        </span>
+        </span>
+            <a href=<%= product['image'] %>><b>Image:</b> <%= product['image'] %></a>
+        <span>
+        <span>
+            <b>Created At:</b> <%= new Date(product['createdAt']).toLocaleDateString("en-US") %>
+        </span>
+    </div>
+</div>

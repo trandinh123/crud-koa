@@ -1,0 +1,36 @@
+<style>
+    a {
+        color: black;
+        text-decoration: none;
+    }
+</style>
+<div style="display: grid; row-gap: .5rem; padding: 2rem 4rem">
+    <% for (var i = 0; i < products.length; i++) { %>
+    <div style="display: grid; border: 1px solid black; margin: .75rem; padding: 1.25rem; background: whitesmoke; row-gap: .5rem;">
+        <span>
+            <b>ID:</b> <%= products[i]['id'] %>
+        </span>
+        <span>
+            <b>Name:</b> <%= products[i]['name'] %>
+        </span>
+        <span>
+            <b>Price:</b> <%= products[i]['price'] %>
+        </span>
+        <span>
+            <b>Description:</b> <%= products[i]['description'] %>
+        </span>
+        <span>
+            <b>Product:</b> <%= products[i]['product'] %>
+        </span>
+        <span>
+            <b>Color:</b> <%= products[i]['color'] %>
+        </span>
+        </span>
+            <a href=<%= products[i]['image'] %>><b>Image:</b> <%= products[i]['image'] %></a>
+        <span>
+        <span>
+            <b>Created At:</b> <%= new Date(products[i]['createdAt']).toLocaleDateString("en-US") %>
+        </span>
+    </div>
+    <% } %>  
+</div>
